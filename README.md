@@ -1,2 +1,2 @@
-# AngularJS-Typescript-WebPack-BoilerPlate
-AngularJS+Typescript+WebPack BoilerPlate - MEAN Stack 
+# AngularJS 1.X -Typescript-WebPack-BoilerPlate
+AngularJS 1.X +Typescript+WebPack BoilerPlate - MEAN Stack
