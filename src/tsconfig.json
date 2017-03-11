@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "pretty": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": [
+      "../node_modules/@types",
+      "../node_modules"
+    ],
+    "types": [
+      "node"
+      /*"core-js",
+      "express",
+      "jasmine",
+      "node",
+      "protractor",
+      "systemjs"*/
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "mapRoot": "./",
+    "moduleResolution": "node",
+    "compileOnSave": true
+
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+
+    <div ng-controller="MainCtrl as ac">
+        <!-- Menu Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbarCollapse1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="assets/images/logo-hid1.png" height="36">
+                    </a>
+                </div>
+
+                <div id="navbarCollapse1" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li ng-class="ac.getClass('/home')"><a ui-sref="Home"><span
+                                class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li ng-class="ac.getClass('/user')"><a ui-sref="User"><span
+                                class="glyphicon glyphicon-user"> </span> Manage User</a></li>
+                        <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage User <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#">Search User</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Create User</a></li>
+
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Modify User</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Delete User</a></li>
+                        </ul>
+                        </li> -->
+                        <li ng-class="ac.getClass('/city')"><a ui-sref="City"><span
+                                class="glyphicon glyphicon-sunglasses"> </span> City</a></li>
+                        <li ng-class="ac.getClass('/help')"><a ui-sref="Help"><span
+                                class="glyphicon glyphicon-hand-right"> </span> Help</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ng-class="ac.getClass('/login')">
+                            <a class="btn btn-default btn-circle collapsed" data-toggle="collapse" href="#nav-collapse2"
+                               aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+                        </li>
+                    </ul>
+
+                    <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+                        <form class="navbar-form navbar-right form-inline" role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="Email">Email</label>
+                                <input type="email" class="form-control" id="Email" placeholder="Email" autofocus
+                                       required/>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="Password">Password</label>
+                                <input type="password" class="form-control" id="Password" placeholder="Password"
+                                       required/>
+                            </div>
+                            <button type="submit" class="btn btn-success" ui-sref="Login">Sign in</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div ui-view>
+        </div>
+    </div>
+</div>
+</body>
+</html>

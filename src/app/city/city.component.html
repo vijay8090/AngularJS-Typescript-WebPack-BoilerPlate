@@ -1,0 +1,10 @@
+<div ng-controller="CityCtrl as cc" ng-init="cc.getCities()">
+<div class='row' ng-repeat="city in cc.model">
+    <div class="col-sm-3">{{city.city}} </div>
+    <div class="col-sm-3">{{city.rank}} </div>
+    <div class="col-sm-3">{{city.person}} </div>
+    <div class="col-sm-3">{{city._id}} </div>
+</div>
+
+
+</div>
